@@ -16,7 +16,6 @@
 
     <h1>Sign Up</h1>
 
-  {% comment %}  {% url 'addUser' %}{% endcomment %}
     <form action="{% url 'addUser'%}" method="post">{% csrf_token %}
 
         First Name:   <input type="text" name="firstName" placeholder="Your name">
