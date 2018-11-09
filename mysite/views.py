@@ -70,6 +70,6 @@ def addUser(request):
         return HttpResponse("Something went wrong!")
 
 def deleteUser(request):
-    # Delete the first record in the db and then redirect to the index.html
+    # Delete a record from the top in the db, and then redirect to the index.html
     People.objects.first().delete()
     return redirect('index')
