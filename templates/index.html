@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome</title>
+</head>
+<body>
+
+    <a href="{% url 'deleteUser' %}">Delete a user</a>
+
+   <h1>List of people who registered</h1>
+
+    {% for person in people %}
+        <h4> ID: {{ person.id }}, Name: {{ person.first_name }}, LastName: {{ person.last_name }}, Age: {{ person.age }}</h4>
+    {% endfor %}
+
+
+</body>
+</html>
